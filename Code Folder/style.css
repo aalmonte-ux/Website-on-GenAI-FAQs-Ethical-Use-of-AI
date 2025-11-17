@@ -3,6 +3,10 @@ body{
   font-weight: 400;
   font-style: normal;
   background-color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 h1{
   font-family: "Quantico", sans-serif;
@@ -10,5 +14,8 @@ h1{
   font-style: normal;
 }
 .container{
+  padding: 20px;         
+  border-radius: 10px;    
+  max-width: 400px;      
+  margin: 20px auto; 
 }
-
