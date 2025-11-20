@@ -1,4 +1,6 @@
-# Website-on-GenAI-FAQs-Ethical-Use-of-AI
+<meta http-equiv="refresh" content="0; url=index.html">
+
+Website-on-GenAI-FAQs-Ethical-Use-of-AI
 Project title: Activity: Build a Website on GenAI FAQs & Ethical Use of AI
 
 Short overview: This is a repository created for a Website on GenAI FAQs & Ethical Use of AI
@@ -14,6 +16,7 @@ Screenshot of your website: <img width="1910" height="1101" alt="image" src="htt
 <img width="1903" height="1047" alt="image" src="https://github.com/user-attachments/assets/3a3c5fb1-d3c1-4d6f-a014-b455fa7663c1" />
 <img width="1917" height="1062" alt="image" src="https://github.com/user-attachments/assets/9ec232e1-aa7c-4507-991d-48a155b14e23" />
 <img width="1919" height="1065" alt="image" src="https://github.com/user-attachments/assets/174a83a1-bf10-4cc3-b874-fd0752564fef" />
+
 
 
 
