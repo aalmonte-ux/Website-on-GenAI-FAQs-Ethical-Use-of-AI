@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const pages = ["Faq.html", "Ethics.html", "article.html"];
+  const pages = ["faq.html", "ethics.html", "article.html"];
   const currentPage = window.location.pathname.split("/").pop();
   const currentIndex = pages.indexOf(currentPage);
 
