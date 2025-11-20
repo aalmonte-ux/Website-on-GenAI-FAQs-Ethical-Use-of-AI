@@ -1,4 +1,5 @@
 Website-on-GenAI-FAQs-Ethical-Use-of-AI
+
 Project title: Activity: Build a Website on GenAI FAQs & Ethical Use of AI
 
 Short overview: This is a repository created for a Website on GenAI FAQs & Ethical Use of AI
