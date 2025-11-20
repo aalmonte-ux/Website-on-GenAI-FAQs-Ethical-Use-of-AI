@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", () => {
   const pages = ["Faq.html", "Ethics.html", "article.html"];
   const currentPage = window.location.pathname.split("/").pop();
