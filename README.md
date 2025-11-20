@@ -1,3 +1,5 @@
+<meta http-equiv="refresh" content="0; url=index.html">
+
 Website-on-GenAI-FAQs-Ethical-Use-of-AI
 Project title: Activity: Build a Website on GenAI FAQs & Ethical Use of AI
 
