@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const pages = ["faq.html", "ethics.html", "article.html"];
-  const currentPage = window.location.pathname.split("/").pop();
+  const currentPage = window.location.pathname.split("/").pop().toLowerCase(); // lowercase
   const currentIndex = pages.indexOf(currentPage);
 
   const prevBtn = document.querySelector(".page-item:first-child .page-link");
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const pageLinks = document.querySelectorAll(".pagination .page-item a");
   pageLinks.forEach(link => {
-    if (link.getAttribute("href") === currentPage) {
+    if (link.getAttribute("href").toLowerCase() === currentPage) {
       link.parentElement.classList.add("active");
     }
   });
