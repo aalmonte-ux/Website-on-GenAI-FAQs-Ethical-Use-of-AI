@@ -322,3 +322,26 @@ body.dark-mode .pagination .page-item.active .page-link {
   color: #000;
   border-color: #00f0ff;
 }
+
+/* =================== PROFILE DARK MODE =================== */
+body.dark-mode .profile-page {
+  background-color: #1c1c1c;
+}
+
+body.dark-mode .profile-box {
+  background-color: #222;
+  color: #00f0ff;
+  border-color: #00f0ff;
+}
+
+body.dark-mode .pinfo {
+  background-color: #222;
+  color: #00f0ff;
+}
+
+body.dark-mode .pagination .page-item .page-link {
+  background-color: #222 !important;
+  color: #00f0ff !important;
+  border-color: #00f0ff !important;
+}
+
