@@ -382,7 +382,115 @@ body.dark-mode .pagination .page-item .page-link {
   z-index: 1000;
 }
 
-/* Mobile adjustments */
+/* ================== GLOBAL BOX SIZING ================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ================== BODY ================== */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #00f0ff;
+}
+
+/* ================== NAVBAR ================== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 1rem;
+  background-color: #222;
+  z-index: 1000;
+}
+
+/* ================== PROFILE PAGE ================== */
+.profile-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 70px; /* account for navbar */
+  width: 100%;
+  text-align: center;
+}
+
+/* ================== PROFILE BOX ================== */
+.profile-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 90%;
+  max-width: 400px;
+  padding: 1rem;
+  border: 2px solid #00f0ff;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 240, 255, 0.3);
+}
+
+.profile-box img {
+  width: 40%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 15px;
+  border: 2px solid #00f0ff;
+  box-shadow: 0 4px 15px rgba(0, 240, 255, 0.2);
+}
+
+/* ================== PINFO ================== */
+.pinfo {
+  width: 90%;
+  max-width: 400px;
+  padding: 1rem;
+  margin-top: 20px;
+  border: 2px solid #00f0ff;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.25);
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+/* ================== FAQ CONTAINER ================== */
+.faq-container {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 1rem;
+  border: 2px solid #00f0ff;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.2);
+  overflow-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+}
+
+/* ================== ACTIVITY BUTTON ================== */
+.activity {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 2px solid #00f0ff;
+  border-radius: 20px;
+  background-color: transparent;
+  color: #00f0ff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* ================== RESPONSIVE ================== */
 @media (max-width: 768px) {
   .profile-box,
   .pinfo,
@@ -392,7 +500,21 @@ body.dark-mode .pagination .page-item .page-link {
   }
 
   .profile-box img {
-    width: 150px;
+    width: 50%;
+    max-width: 150px;
     height: auto;
   }
+
+  .activity {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+/* Optional: scroll if content exceeds viewport */
+.profile-page,
+.faq-container,
+.profile-box,
+.pinfo {
+  overflow: auto;
 }
