@@ -383,7 +383,9 @@ body.dark-mode .pagination .page-item .page-link {
   }
 }
 
-.faq-container {
+.faq-container,
+.profile-box,
+.pinfo {
   overflow-wrap: break-word; 
   word-break: break-word;    
   white-space: normal;       
