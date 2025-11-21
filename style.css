@@ -359,7 +359,7 @@ body.dark-mode .pagination .page-item .page-link {
     overflow-wrap: break-word;
   }
 
-  /* Profile image scales down */
+  
   .profile-box img {
     width: 150px !important;
     height: 150px !important;
@@ -384,8 +384,7 @@ body.dark-mode .pagination .page-item .page-link {
 }
 
 .faq-container {
-  box-sizing: border-box;       
-  word-wrap: break-word;        
-  overflow-wrap: break-word;   
-  white-space: normal;          
+  overflow-wrap: break-word; 
+  word-break: break-word;    
+  white-space: normal;       
 }
