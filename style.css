@@ -345,33 +345,50 @@ body.dark-mode .pagination .page-item .page-link {
   border-color: #00f0ff !important;
 }
 
-/* Mobile adjustments */
+/* ====== MOBILE OVERRIDE ====== */
 @media (max-width: 480px) {
+
+  /* Make profile page stack nicely */
+  .profile-page {
+    flex-direction: column !important;
+    padding: 1rem !important;
+  }
+
+  /* Make profile box fit smaller screens */
   .profile-box {
-    max-width: 90%;
-    padding: 1rem;
+    width: 90% !important;
+    max-width: 300px !important;
+    padding: 1rem !important;
   }
 
+  /* Shrink profile image */
   .profile-box img {
-    width: 120px;
-    height: 120px;
+    width: 120px !important;
+    height: 120px !important;
   }
 
+  /* Reduce pinfo spacing */
   .pinfo {
-    padding: 1rem;
-    margin-top: 20px;
+    padding: 1rem !important;
+    margin-top: 20px !important;
   }
 
+  /* Shrink activity button */
   .activity {
-    margin-top: 40px;
-    padding: 8px 16px;
-    font-size: 14px;
+    margin-top: 30px !important;
+    padding: 8px 16px !important;
+    font-size: 14px !important;
   }
 
+  /* Navbar padding for mobile */
+  .navbar {
+    padding: 10px 1rem !important;
+  }
+
+  /* FAQ container fit screen */
   .faq-container {
-    padding: 20px;
-    margin: 20px;
+    width: 90% !important;
+    padding: 1rem !important;
+    margin: 20px auto !important;
   }
 }
-
-
