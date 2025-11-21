@@ -384,13 +384,8 @@ body.dark-mode .pagination .page-item .page-link {
 }
 
 .faq-container {
-  box-sizing: border-box;      
+  box-sizing: border-box;       
   word-wrap: break-word;        
-  overflow-wrap: break-word;    
+  overflow-wrap: break-word;   
   white-space: normal;          
-  width: 90%;                   
-  max-width: 800px;             
-  margin: 20px auto;           
-  padding: 1rem;                
 }
-
