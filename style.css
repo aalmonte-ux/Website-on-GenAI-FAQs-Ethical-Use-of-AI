@@ -347,41 +347,31 @@ body.dark-mode .pagination .page-item .page-link {
 
 @media (max-width: 768px) {
 
-  
   .profile-box,
-  .pinfo {
-    width: 90% !important;        
-    max-width: 800px !important;  
-    margin: 0 auto !important;
-    padding: 1rem !important;
-    box-sizing: border-box !important; 
-    word-wrap: break-word;         
+  .pinfo,
+  .faq-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    box-sizing: border-box;
     overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
   }
 
-  
   .profile-box img {
-    width: 150px !important;
-    height: 150px !important;
-    max-width: 40%;              
+    width: 150px;
+    height: 150px;
+    max-width: 40%;
+    height: auto;
   }
-
 
   .navbar {
-    width: 100% !important;
-    box-sizing: border-box !important;
-    padding: 10px 1rem !important;
-  }
-
-
-  .faq-container {
-    width: 90% !important;
-    max-width: 800px !important;
-    margin: 20px auto !important;
-    padding: 1rem !important;
-    box-sizing: border-box !important;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 1rem;
+    display: flex;
+    justify-content: space-between;
   }
 }
-
-
-
