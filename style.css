@@ -345,50 +345,41 @@ body.dark-mode .pagination .page-item .page-link {
   border-color: #00f0ff !important;
 }
 
-/* ====== MOBILE OVERRIDE ====== */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
 
-  /* Make profile page stack nicely */
-  .profile-page {
-    flex-direction: column !important;
-    padding: 1rem !important;
-  }
-
-  /* Make profile box fit smaller screens */
-  .profile-box {
-    width: 90% !important;
-    max-width: 300px !important;
-    padding: 1rem !important;
-  }
-
-  /* Shrink profile image */
-  .profile-box img {
-    width: 120px !important;
-    height: 120px !important;
-  }
-
-  /* Reduce pinfo spacing */
+  
+  .profile-box,
   .pinfo {
+    width: 90% !important;        
+    max-width: 800px !important;  
+    margin: 0 auto !important;
     padding: 1rem !important;
-    margin-top: 20px !important;
+    box-sizing: border-box !important; 
+    word-wrap: break-word;         
+    overflow-wrap: break-word;
   }
 
-  /* Shrink activity button */
-  .activity {
-    margin-top: 30px !important;
-    padding: 8px 16px !important;
-    font-size: 14px !important;
+  /* Profile image scales down */
+  .profile-box img {
+    width: 150px !important;
+    height: 150px !important;
+    max-width: 40%;              
   }
 
-  /* Navbar padding for mobile */
+
   .navbar {
+    width: 100% !important;
+    box-sizing: border-box !important;
     padding: 10px 1rem !important;
   }
 
-  /* FAQ container fit screen */
+
   .faq-container {
     width: 90% !important;
-    padding: 1rem !important;
+    max-width: 800px !important;
     margin: 20px auto !important;
+    padding: 1rem !important;
+    box-sizing: border-box !important;
   }
 }
+
