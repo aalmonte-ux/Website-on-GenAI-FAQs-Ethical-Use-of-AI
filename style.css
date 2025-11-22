@@ -112,20 +112,22 @@ input:checked + .slider::before {
 }
 
 
- .profile-box {
+.profile-box {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
   width: 90%;
   max-width: 400px;
-  padding: 2.5rem 2rem 1.5rem 2rem; 
+  padding: 2rem 2rem 1.5rem 2rem; /* extra padding at top for the image */
   border: 2px solid #00f0ff;
   border-radius: 20px;
   box-shadow: 0 0 25px rgba(0, 240, 255, 0.3);
   font-family: 'Orbitron', monospace;
   text-align: center;
   transition: all 0.3s ease-in-out;
+  position: relative; /* allows absolute positioning if needed */
+  overflow: visible; /* very important: lets the image overflow the box */
 }
 
 .profile-box img {
@@ -134,9 +136,12 @@ input:checked + .slider::before {
   border-radius: 50%;
   border: 2px solid #00f0ff;
   object-fit: cover;
-  margin-top: -60px; 
-  display: block;
+  position: absolute; /* float above the box */
+  top: -60px; /* adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
 }
+
 
 }
 
