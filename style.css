@@ -106,7 +106,7 @@ input:checked + .slider::before {
   padding: 2rem;
   background-color: #ffffff;
   border: 2px solid #00f0ff;
-  border-radius: 20px;
+  border-radius: 20px; /* keeps box shape */
   box-shadow: 0 0 25px rgba(0, 240, 255, 0.3);
   font-family: 'Orbitron', monospace;
   text-align: center;
@@ -116,7 +116,7 @@ input:checked + .slider::before {
   width: 150px;
   height: 150px;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 50%; /* keeps image perfectly circular */
   border: 2px solid #00f0ff;
   box-shadow: 0 4px 15px rgba(0, 240, 255, 0.2);
 }
@@ -170,11 +170,10 @@ input:checked + .slider::before {
   text-shadow: 0 0 8px #00f0ff;
 }
 
-/* FAQ container with fixed max-width and equal side margins */
 .faq-container {
-  max-width: 800px;        /* fixed max width */
-  width: 90%;              /* responsive width */
-  margin: 50px auto;       /* centers container horizontally */
+  max-width: 800px;
+  width: 100%;
+  margin: 50px auto;
   padding: 30px;
   border-radius: 25px;
   background: rgba(0, 240, 255, 0.05);
@@ -194,9 +193,12 @@ input:checked + .slider::before {
 }
 
 .faq-container p,
-.faq-container ul {
+.faq-container ul,
+.faq-container li {
   color: #000;
   line-height: 1.6;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .faq-container ul {
@@ -238,7 +240,7 @@ input:checked + .slider::before {
   border-color: #00f0ff;
 }
 
-/* DARK MODE */
+/* DARK MODE FIX: all text white */
 body.dark-mode {
   background-color: #1c1c1c;
   color: #ffffff;
@@ -260,7 +262,7 @@ body.dark-mode .faq-container li {
 
 body.dark-mode .card {
   background-color: #222;
-  color: #00f0ff;
+  color: #ffffff;
   border-color: #00f0ff;
 }
 
@@ -289,7 +291,6 @@ body.dark-mode .pagination .page-item.active .page-link {
   border-color: #00f0ff;
 }
 
-/* RESPONSIVE */
 @media (max-width: 768px) {
   .profile-page {
     padding: 1rem;
@@ -313,9 +314,9 @@ body.dark-mode .pagination .page-item.active .page-link {
     margin-top: 1rem;
   }
   .faq-container {
-    max-width: 90%;
+    max-width: 100%;
     padding: 20px;
-    margin: 20px auto;
+    margin: 20px 10px;
   }
   .navbar {
     flex-wrap: wrap;
