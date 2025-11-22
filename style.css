@@ -182,16 +182,14 @@ input:checked+.slider::before {
 
 .faq-container {
   max-width: 800px;
-  width: 100%;
-  margin: 50px auto;
+  width: 90%; 
+  margin: 50px auto; 
   padding: 30px;
   border-radius: 25px;
   background: rgba(0, 240, 255, 0.05);
   border: 2px solid #00f0ff;
   box-shadow: 0 0 20px rgba(0, 240, 255, 0.2);
   transition: all 0.3s ease-in-out;
-  word-wrap: break-word;
-  text-align: left;
 }
 
 .faq-container h1,
