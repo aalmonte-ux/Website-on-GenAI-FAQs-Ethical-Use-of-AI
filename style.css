@@ -31,17 +31,21 @@
         box-shadow: 0 4px 15px rgba(0, 240, 255, 0.2);
       }
 
-    .pinfo {
+.pinfo {
   background-color: #ffffff;
   border: 2px solid #00f0ff;
   border-radius: 15px;
-  padding: 1rem 1.5rem; 
+  padding: 1.5rem 2rem;
   width: 100%;
-  max-width: 400px;      
+  max-width: 350px;       
+  height: auto;           
+  max-height: 200px;      
   box-shadow: 0 0 20px rgba(0, 240, 255, 0.25);
   transition: transform 0.3s, box-shadow 0.3s;
-  margin: 20px auto 0 auto; 
+  margin-top: 40px;
+  overflow: auto;         
 }
+
 
       .pinfo h3 {
         margin: 0.5rem 0;
