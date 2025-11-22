@@ -22,29 +22,29 @@
         text-align: center;
       }
 
-      .profile-box img {
-        width: 200px;
-        height: 200px;
-        object-fit: cover;
-        border-radius: 15px;
-        border: 2px solid #00f0ff;
-        box-shadow: 0 4px 15px rgba(0, 240, 255, 0.2);
-      }
+   .profile-box {
+  width: 90%;
+  max-width: 400px;
+  padding: 1rem;
+  border: 2px solid #00f0ff;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 240, 255, 0.3);
+  height: auto; /* allow box to size to content */
+}
 
 .pinfo {
-  background-color: #ffffff;
+  width: 90%;
+  max-width: 400px;
+  padding: 1rem;
+  margin-top: 20px;
   border: 2px solid #00f0ff;
   border-radius: 15px;
-  padding: 1.5rem 2rem;
-  width: 100%;
-  max-width: 350px;       
-  height: auto;           
-  max-height: 200px;      
   box-shadow: 0 0 20px rgba(0, 240, 255, 0.25);
-  transition: transform 0.3s, box-shadow 0.3s;
-  margin-top: 40px;
-  overflow: auto;         
+  height: auto;      /* shrink to content */
+  max-height: 200px; /* optional limit */
+  overflow: auto;    /* scroll if content is bigger */
 }
+
 
 
       .pinfo h3 {
@@ -328,7 +328,7 @@ body.dark-mode .pagination .page-item.active .page-link {
   border-color: #00f0ff;
 }
 
-/* =================== PROFILE DARK MODE =================== */
+
 body.dark-mode .profile-page {
   background-color: #1c1c1c;
 }
@@ -350,16 +350,15 @@ body.dark-mode .pagination .page-item .page-link {
   border-color: #00f0ff !important;
 }
 
-/* Make the whole page full viewport height */
+
 .profile-page,
 .faq-container,
-.profile-box,
-.pinfo {
+ {
   min-height: 100vh;
   box-sizing: border-box;
 }
 
-/* Profile box centering */
+
 .profile-page {
   display: flex;
   flex-direction: column;
@@ -367,13 +366,13 @@ body.dark-mode .pagination .page-item .page-link {
   justify-content: center;
 }
 
-/* Profile image scaling */
+
 .profile-box img {
   max-width: 40%;
   height: auto;
 }
 
-/* Navbar full width and fixed at top */
+
 .navbar {
   position: fixed;
   top: 0;
@@ -387,14 +386,14 @@ body.dark-mode .pagination .page-item .page-link {
   z-index: 1000;
 }
 
-/* ================== GLOBAL BOX SIZING ================== */
-* {
+
+ {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* ================== BODY ================== */
+
 body {
   min-height: 100vh;
   display: flex;
@@ -406,7 +405,7 @@ body {
   color: #00f0ff;
 }
 
-/* ================== NAVBAR ================== */
+
 .navbar {
   position: fixed;
   top: 0;
