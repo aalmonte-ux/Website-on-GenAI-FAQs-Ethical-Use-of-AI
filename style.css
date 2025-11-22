@@ -136,6 +136,7 @@ input:checked + .slider::before {
   box-shadow: 0 4px 15px rgba(0, 240, 255, 0.2);
   display: block;
   margin: -60px auto 1rem;
+  margin-top: 10px;
 }
 
 .pinfo {
