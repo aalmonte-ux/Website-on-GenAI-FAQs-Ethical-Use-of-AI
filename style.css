@@ -8,18 +8,17 @@ body {
   min-height: 100vh;
   margin: 0;
   color: #00f0ff;
-  transition: background-color 0.3s, color 0.3s;
 }
 
 .navbar {
   width: 100%;
   padding: 10px 20px;
   box-shadow: 0 0 10px rgba(0, 240, 255, 0.2);
+  transition: all 0.3s ease-in-out;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   z-index: 1000;
-  transition: background-color 0.3s;
 }
 
 .navbar .container-fluid {
@@ -107,11 +106,10 @@ input:checked + .slider::before {
   padding: 2rem;
   background-color: #ffffff;
   border: 2px solid #00f0ff;
-  border-radius: 50%;
+  border-radius: 20px;
   box-shadow: 0 0 25px rgba(0, 240, 255, 0.3);
   font-family: 'Orbitron', monospace;
   text-align: center;
-  overflow: hidden;
 }
 
 .profile-box img {
@@ -132,7 +130,6 @@ input:checked + .slider::before {
   box-shadow: 0 0 20px rgba(0, 240, 255, 0.25);
   transition: transform 0.3s, box-shadow 0.3s;
   margin-top: 1.5rem;
-  box-sizing: border-box;
 }
 
 .pinfo h3 {
@@ -173,24 +170,29 @@ input:checked + .slider::before {
   text-shadow: 0 0 8px #00f0ff;
 }
 
-.faq-container {
+.faq-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
   width: 100%;
-  max-width: 800px;
-  min-height: 250px;
-  margin: 40px auto;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.faq-container {
+  max-width: 350px;
+  width: 100%;
+  box-sizing: border-box;
   padding: 30px;
   border-radius: 25px;
   background: rgba(0, 240, 255, 0.05);
   border: 2px solid #00f0ff;
   box-shadow: 0 0 20px rgba(0, 240, 255, 0.2);
-  transition: all 0.3s ease-in-out;
-  box-sizing: border-box;
+  text-align: left;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  text-align: left;
+  transition: all 0.3s ease-in-out;
 }
 
 .faq-container h1,
@@ -198,10 +200,11 @@ input:checked + .slider::before {
 .faq-container p,
 .faq-container ul,
 .faq-container li {
-  margin: 0 0 1rem 0;
-  padding: 0;
+  color: #000;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  margin: 0 0 1rem 0;
+  padding: 0;
 }
 
 .card {
@@ -310,12 +313,6 @@ body.dark-mode .pagination .page-item.active .page-link {
     font-size: 14px;
     margin-top: 1rem;
   }
-  .faq-container {
-    max-width: 100%;
-    padding: 20px;
-    margin: 20px 10px;
-    min-height: auto;
-  }
   .navbar {
     flex-wrap: wrap;
     justify-content: space-between;
@@ -326,8 +323,14 @@ body.dark-mode .pagination .page-item.active .page-link {
     align-items: flex-start;
     gap: 0.5rem;
   }
-  .switch {
-    margin-top: 0;
+  .faq-wrapper {
+    padding: 0 5px;
+    gap: 15px;
+  }
+  .faq-container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 15px;
   }
   .pagination .page-item .page-link {
     margin-top: 10px;
