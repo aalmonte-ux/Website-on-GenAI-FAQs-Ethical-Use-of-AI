@@ -112,18 +112,16 @@ input:checked+.slider::before {
   box-shadow: 0 0 25px rgba(0, 240, 255, 0.3);
   font-family: 'Orbitron', monospace;
   text-align: center;
-  box-sizing: border-box;
 }
 
 .profile-box img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
-  border-radius: 15px;
+  border-radius: 50%;
   border: 2px solid #00f0ff;
   box-shadow: 0 4px 15px rgba(0, 240, 255, 0.2);
 }
-
 .pinfo {
   background-color: #ffffff;
   border: 2px solid #00f0ff;
