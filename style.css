@@ -111,7 +111,6 @@ input:checked + .slider::before {
   text-align: center;
 }
 
-
 .profile-box {
   display: flex;
   flex-direction: column;
@@ -119,15 +118,15 @@ input:checked + .slider::before {
   gap: 1rem;
   width: 90%;
   max-width: 400px;
-  padding: 4rem 2rem 1.5rem 2rem; /* increased top padding for image space */
+  padding: 4rem 2rem 1.5rem 2rem; /* space for profile image */
   border: 2px solid #00f0ff;
   border-radius: 20px;
   box-shadow: 0 0 25px rgba(0, 240, 255, 0.3);
   font-family: 'Orbitron', monospace;
   text-align: center;
   transition: all 0.3s ease-in-out;
-  position: relative;
-  overflow: visible; /* allows image to float outside */
+  position: relative; /* for absolute image */
+  overflow: visible;  /* allows image to float outside */
 }
 
 .profile-box img {
@@ -137,22 +136,26 @@ input:checked + .slider::before {
   border: 2px solid #00f0ff;
   object-fit: cover;
   position: absolute;
-  top: -60px; /* floats above box */
+  top: -60px; /* floats above the box */
   left: 50%;
   transform: translateX(-50%);
 }
 
-@media (max-width: 768px) {
-  .profile-box {
-    padding: 3.5rem 1.5rem 1.5rem 1.5rem; /* responsive top padding */
-  }
-
-  .profile-box img {
-    width: 80px;
-    height: 80px;
-    top: -40px;
-  }
+.pinfo {
+  width: 100%;
+  max-width: 360px;
+  padding: 1rem;
+  margin-top: 20px;
+  border: 2px solid #00f0ff;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.25);
+  overflow-wrap: break-word;
+  word-break: break-word;
+  font-size: 8px;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
 }
+
 .pinfo h3 {
   margin: 0.5rem 0;
   color: #00f0ff;
@@ -268,18 +271,12 @@ input:checked + .slider::before {
   border-color: #00f0ff;
 }
 
-body.dark-mode .faq-container {
+body.dark-mode .faq-container,
+body.dark-mode .profile-box,
+body.dark-mode .pinfo {
   background-color: #222;
+  color: #00f0ff;
   border-color: #00f0ff;
-  color: #ffffff;
-}
-
-body.dark-mode .faq-container h1,
-body.dark-mode .faq-container h2,
-body.dark-mode .faq-container p,
-body.dark-mode .faq-container ul,
-body.dark-mode .faq-container li {
-  color: #ffffff;
 }
 
 body.dark-mode .card {
@@ -317,13 +314,6 @@ body.dark-mode .profile-page {
   background-color: #1c1c1c;
 }
 
-body.dark-mode .profile-box,
-body.dark-mode .pinfo {
-  background-color: #222;
-  color: #00f0ff;
-  border-color: #00f0ff;
-}
-
 @media (max-width: 768px) {
   .profile-box,
   .pinfo,
@@ -332,11 +322,14 @@ body.dark-mode .pinfo {
     padding: 1rem;
   }
 
+  .profile-box {
+    padding-top: 3.5rem; /* responsive padding */
+  }
+
   .profile-box img {
     width: 80px;
     height: 80px;
-    margin-top: -40px;
-    margin-bottom: 0.5rem;
+    top: -40px;
   }
 
   .activity {
