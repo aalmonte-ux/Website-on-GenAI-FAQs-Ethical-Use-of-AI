@@ -312,7 +312,6 @@ body.dark-mode .pagination .page-item.active .page-link {
   border-color: #00f0ff;
 }
 
-/* =================== RESPONSIVE =================== */
 @media (max-width: 768px) {
   .profile-page {
     padding: 1rem;
