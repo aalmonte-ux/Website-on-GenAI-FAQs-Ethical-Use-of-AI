@@ -319,3 +319,50 @@ body.dark-mode .pagination .page-item.active .page-link {
   color: #000;
   border-color: #00f0ff;
 }
+
+@media (max-width: 768px) {
+  .profile-page {
+    padding: 1rem;
+  }
+  .profile-box {
+    max-width: 100%;
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+  .profile-box img {
+    width: 120px;
+    height: 120px;
+  }
+  .pinfo {
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+  }
+  .activity {
+    padding: 8px 16px;
+    font-size: 14px;
+    margin-top: 1rem;
+  }
+  .faq-container {
+    max-width: 100%;
+    padding: 20px;
+    margin: 20px 10px;
+  }
+  .navbar .container-fluid {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .navbar-brand {
+    flex-shrink: 0;
+  }
+  .switch {
+    margin-top: 0;
+  }
+  .pagination .page-item .page-link {
+    margin-top: 10px;
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+}
+
