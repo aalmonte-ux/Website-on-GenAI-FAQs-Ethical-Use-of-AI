@@ -111,37 +111,31 @@ input:checked + .slider::before {
   text-align: center;
 }
 
-.profile-box {
+
+ .profile-box {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
   width: 90%;
   max-width: 400px;
-  padding: 1.5rem 2rem;
-  padding-top: 80px; 
+  padding: 2.5rem 2rem 1.5rem 2rem; 
   border: 2px solid #00f0ff;
   border-radius: 20px;
   box-shadow: 0 0 25px rgba(0, 240, 255, 0.3);
   font-family: 'Orbitron', monospace;
   text-align: center;
   transition: all 0.3s ease-in-out;
-  position: relative; 
-    
 }
 
 .profile-box img {
-  position: absolute;
-  top: -60px; 
-  left: 50%;
-  transform: translateX(-50%);
   width: 120px;
   height: 120px;
   border-radius: 50%;
   border: 2px solid #00f0ff;
   object-fit: cover;
-  margin-top: 10px;
-
+  margin-top: -60px; 
+  display: block;
 }
 
 }
