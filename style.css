@@ -111,36 +111,34 @@ input:checked + .slider::before {
   text-align: center;
 }
 
-/* Profile Box */
 .profile-box {
-  position: relative; /* allows image to float */
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
   width: 90%;
   max-width: 400px;
-  padding: 4.5rem 2rem 1.5rem 2rem; /* top padding for image space */
+  padding: 2rem 2rem 1.5rem 2rem;
   border: 2px solid #00f0ff;
   border-radius: 20px;
   box-shadow: 0 0 25px rgba(0, 240, 255, 0.3);
   font-family: 'Orbitron', monospace;
   text-align: center;
-  transition: all 0.3s ease-in-out;
-  overflow: visible; /* ensures image isn't cut off */
+  position: relative;
+  overflow: visible;
 }
 
 .profile-box img {
-        width: 200px;
-        height: 200px;
-        object-fit: cover;
-        border-radius: 15px;
-        border: 2px solid #00f0ff;
-        box-shadow: 0 4px 15px rgba(0, 240, 255, 0.2);
-      }
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid #00f0ff;
+  object-fit: cover;
+  margin-top: -60px;
+  z-index: 1;
+  box-shadow: 0 4px 15px rgba(0, 240, 255, 0.2);
 }
 
-/* Info Box */
 .pinfo {
   width: 100%;
   max-width: 360px;
@@ -198,7 +196,6 @@ input:checked + .slider::before {
   text-shadow: 0 0 8px #00f0ff;
 }
 
-/* FAQ Container */
 .faq-container {
   width: 90%;
   max-width: 800px;
@@ -228,7 +225,6 @@ input:checked + .slider::before {
   margin-left: 20px;
 }
 
-/* Pagination */
 .pagination .page-item .page-link {
   background-color: #ffffff;
   color: #00f0ff;
@@ -244,7 +240,6 @@ input:checked + .slider::before {
   border-color: #00f0ff;
 }
 
-/* Dark Mode */
 body.dark-mode .faq-container,
 body.dark-mode .profile-box,
 body.dark-mode .pinfo {
@@ -276,7 +271,6 @@ body.dark-mode .pagination .page-item .page-link {
   border-color: #00f0ff !important;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .profile-box,
   .pinfo,
@@ -286,13 +280,13 @@ body.dark-mode .pagination .page-item .page-link {
   }
 
   .profile-box {
-    padding-top: 3.5rem; /* responsive padding for image */
+    padding-top: 3.5rem;
   }
 
   .profile-box img {
     width: 80px;
     height: 80px;
-    top: -40px;
+    margin-top: -40px;
   }
 
   .activity {
