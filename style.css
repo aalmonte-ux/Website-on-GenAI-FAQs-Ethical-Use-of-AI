@@ -1,4 +1,4 @@
-/* =================== BODY =================== */
+
 body {
   background: #ffffff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -9,10 +9,10 @@ body {
   min-height: 100vh;
   margin: 0;
   color: #00f0ff;
-  box-sizing: border-box; /* ensures padding/borders are included in width */
+  box-sizing: border-box; 
 }
 
-/* =================== NAVBAR =================== */
+
 .navbar {
   width: 100%;
   padding: 10px 20px;
@@ -38,11 +38,10 @@ body {
 }
 
 .navbar-brand.dark-mode {
-  color: #ffffff; /* FIXED: navbar text white in dark mode */
+  color: #ffffff; 
   font-weight: bold;
 }
 
-/* =================== SWITCH TOGGLE =================== */
 .switch {
   position: relative;
   display: inline-block;
@@ -89,7 +88,7 @@ input:checked+.slider::before {
   transform: translateX(22px);
 }
 
-/* =================== PROFILE PAGE =================== */
+
 .profile-page {
   display: flex;
   justify-content: center;
@@ -176,7 +175,7 @@ input:checked+.slider::before {
   text-shadow: 0 0 8px #00f0ff;
 }
 
-/* =================== FAQ CONTAINER =================== */
+
 .faq-container {
   max-width: 800px;
   width: 100%;
@@ -188,7 +187,7 @@ input:checked+.slider::before {
   box-shadow: 0 0 20px rgba(0, 240, 255, 0.2);
   transition: all 0.3s ease-in-out;
   box-sizing: border-box;
-  word-wrap: break-word; /* ensures text wraps */
+  word-wrap: break-word; 
 }
 
 .faq-container h1,
@@ -210,7 +209,7 @@ input:checked+.slider::before {
   margin-left: 20px;
 }
 
-/* Center FAQ containers with fixed side margins on desktop */
+
 @media (min-width: 1024px) {
   .faq-container {
     margin-left: auto;
@@ -218,7 +217,7 @@ input:checked+.slider::before {
   }
 }
 
-/* =================== CARDS =================== */
+
 .card {
   transition: all 0.3s ease-in-out;
 }
@@ -239,7 +238,7 @@ input:checked+.slider::before {
   color: #000;
 }
 
-/* =================== PAGINATION =================== */
+
 .pagination .page-item .page-link {
   background-color: #ffffff;
   color: #00f0ff;
@@ -260,7 +259,7 @@ input:checked+.slider::before {
   border-color: #00f0ff;
 }
 
-/* =================== DARK MODE =================== */
+
 body.dark-mode {
   background-color: #1c1c1c;
   color: #ffffff;
@@ -271,7 +270,7 @@ body.dark-mode .navbar {
 }
 
 body.dark-mode .navbar-brand {
-  color: #ffffff; /* FIXED: navbar text white */
+  color: #ffffff; 
 }
 
 body.dark-mode .faq-container {
@@ -319,7 +318,7 @@ body.dark-mode .pagination .page-item.active .page-link {
   border-color: #00f0ff;
 }
 
-/* =================== RESPONSIVE =================== */
+
 @media (max-width: 768px) {
   .profile-page {
     padding: 1rem;
