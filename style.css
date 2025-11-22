@@ -1,11 +1,9 @@
-    .profile-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 2rem 1rem;
-  background-color: #ffffff;
+ .profile-page {
   min-height: 100vh;
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .profile-box {
@@ -15,22 +13,63 @@
   gap: 1rem;
   width: 90%;
   max-width: 400px;
-  padding: 1rem 2rem;
+  padding: 1.5rem;
   border: 2px solid #00f0ff;
   border-radius: 20px;
   box-shadow: 0 0 25px rgba(0, 240, 255, 0.3);
-  font-family: 'Orbitron', monospace;
   text-align: center;
 }
 
+
+.profile-box img {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  border-radius: 15px;
+  border: 2px solid #00f0ff;
+  box-shadow: 0 4px 15px rgba(0, 240, 255, 0.2);
+}
+
+
 .pinfo {
   width: 100%;
-  max-width: 350px;
+  max-width: 360px;
   padding: 1rem;
-  margin-top: 20px;
+  margin-top: 10px;
   border: 2px solid #00f0ff;
   border-radius: 15px;
   box-shadow: 0 0 20px rgba(0, 240, 255, 0.25);
+  overflow-wrap: break-word;
+  word-break: break-word;
+  font-size: 12px;
+}
+
+
+@media (max-width: 600px) {
+  .profile-box {
+    padding: 1rem;
+  }
+
+  .profile-box img {
+    max-width: 200px;
+  }
+
+  .pinfo {
+    font-size: 11px;
+  }
+}
+
+
+body.dark-mode .profile-page {
+  background-color: #1c1c1c;
+}
+
+body.dark-mode .profile-box,
+body.dark-mode .pinfo {
+  background-color: #222;
+  color: #00f0ff;
+  border-color: #00f0ff;
+}
 
   height: auto;
   max-height: none;
