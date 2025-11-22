@@ -106,7 +106,7 @@ input:checked + .slider::before {
   padding: 2rem;
   background-color: #ffffff;
   border: 2px solid #00f0ff;
-  border-radius: 20px;
+  border-radius: 20px; /* keeps box shape */
   box-shadow: 0 0 25px rgba(0, 240, 255, 0.3);
   font-family: 'Orbitron', monospace;
   text-align: center;
@@ -116,7 +116,7 @@ input:checked + .slider::before {
   width: 150px;
   height: 150px;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 50%; /* keeps image perfectly circular */
   border: 2px solid #00f0ff;
   box-shadow: 0 4px 15px rgba(0, 240, 255, 0.2);
 }
@@ -172,6 +172,7 @@ input:checked + .slider::before {
 
 .faq-container {
   max-width: 800px;
+  width: 100%;
   margin: 50px auto;
   padding: 30px;
   border-radius: 25px;
@@ -179,6 +180,10 @@ input:checked + .slider::before {
   border: 2px solid #00f0ff;
   box-shadow: 0 0 20px rgba(0, 240, 255, 0.2);
   transition: all 0.3s ease-in-out;
+  text-align: left;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .faq-container h1,
@@ -188,9 +193,12 @@ input:checked + .slider::before {
 }
 
 .faq-container p,
-.faq-container ul {
+.faq-container ul,
+.faq-container li {
   color: #000;
   line-height: 1.6;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .faq-container ul {
@@ -232,9 +240,10 @@ input:checked + .slider::before {
   border-color: #00f0ff;
 }
 
+/* DARK MODE FIX: all text white */
 body.dark-mode {
   background-color: #1c1c1c;
-  color: #00f0ff;
+  color: #ffffff;
 }
 
 body.dark-mode .faq-container {
@@ -253,7 +262,7 @@ body.dark-mode .faq-container li {
 
 body.dark-mode .card {
   background-color: #222;
-  color: #00f0ff;
+  color: #ffffff;
   border-color: #00f0ff;
 }
 
