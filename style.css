@@ -31,16 +31,17 @@
         box-shadow: 0 4px 15px rgba(0, 240, 255, 0.2);
       }
 
-      .pinfo {
-        background-color: #ffffff;
-        border: 2px solid #00f0ff;
-        border-radius: 15px;
-        padding: 1.5rem 2rem;
-        width: 100%;
-        box-shadow: 0 0 20px rgba(0, 240, 255, 0.25);
-        transition: transform 0.3s, box-shadow 0.3s;
-        margin-top: 40PX;
-      }
+    .pinfo {
+  background-color: #ffffff;
+  border: 2px solid #00f0ff;
+  border-radius: 15px;
+  padding: 1rem 1.5rem; 
+  width: 100%;
+  max-width: 400px;      
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.25);
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin: 20px auto 0 auto; 
+}
 
       .pinfo h3 {
         margin: 0.5rem 0;
@@ -182,7 +183,7 @@ input:checked+.slider::before {
   margin-left: 20px;
 }
 
-/* =================== CARDS =================== */
+
 .card {
   transition: all 0.3s ease-in-out;
 }
@@ -290,7 +291,7 @@ body.dark-mode .faq-container li {
   /* ensure all text inside container is white */
 }
 
-/* =================== CARD DARK MODE =================== */
+/* =================== DARK MODE =================== */
 body.dark-mode .card {
   background-color: #222;
   color: #00f0ff;
