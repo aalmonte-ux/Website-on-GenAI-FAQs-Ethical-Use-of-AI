@@ -332,3 +332,12 @@ body.dark-mode .pagination .page-item.active .page-link {
   }
 }
 
+.faq-container,
+.faq-container p,
+.faq-container ul,
+.faq-container li {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+
