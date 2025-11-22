@@ -340,4 +340,40 @@ body.dark-mode .pagination .page-item.active .page-link {
   overflow-wrap: break-word;
 }
 
+.faq-container {
+  max-width: 800px;
+  width: 100%;
+  margin: 40px auto; 
+  padding: 30px;
+  border-radius: 25px;
+  background: rgba(0, 240, 255, 0.05);
+  border: 2px solid #00f0ff;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.2);
+  transition: all 0.3s ease-in-out;
+  text-align: left;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  box-sizing: border-box;
+}
+
+.faq-container h1,
+.faq-container h2,
+.faq-container p,
+.faq-container ul,
+.faq-container li {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  margin: 0 0 1rem 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .faq-container {
+    max-width: 100%;
+    padding: 20px;
+    margin: 20px 10px;
+  }
+}
+
+
 
