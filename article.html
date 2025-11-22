@@ -1,66 +1,340 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Wedding Documentation</title>
-  <link href="style.css" rel="stylesheet">
-  <script src="script.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body class="light-mode">
+body {
+  background: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  color: #00f0ff;
+}
 
-<!-- Navbar -->
-<body class="light-mode">
-<nav class="navbar navbar-expand-lg light-mode">
-  <div class="container-fluid">
-    <a class="navbar-brand light-mode" href="home.html">
-      <img src="https://cdn2.iconfinder.com/data/icons/artifiial-intelligence/70/47_Transparent_Ai-1024.png" 
-           alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-      GenAI FAQs & Ethical Use of AI
-    </a>
-    <div class="d-flex align-items-center ms-auto">
-      <label class="switch">
-        <input type="checkbox" id="toggleMode">
-        <span class="slider round"></span>
-      </label>
-      <span class="mode-label ms-2">Light Mode</span>
-    </div>
-  </div>
-</nav>
+.navbar {
+  width: 100%;
+  padding: 10px 20px;
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.2);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  z-index: 1000;
+}
 
-<!-- Page Content -->
-<div class="page content">
-  <div class="faq-container">
-    <h1>Wedding Documentation Reflection</h1>
-    
-    <p>You are organizing your wedding, and the documentation team is asking 40k for the package. They plan to use an iPhone 16 Pro Max and CapCut for same-day video edits. The team has 2 years of experience and an above-average portfolio.</p>
+.navbar .container-fluid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    <h2>Integrity</h2>
-    <p>The team demonstrates integrity by being responsible for the quality and accuracy of their work. Just like skilled developers overseeing AI-assisted tasks, they are accountable for delivering a polished final product that meets expectations.</p>
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
 
-    <h2>Creativity</h2>
-    <p>Using mobile technology and CapCut creatively allows the team to produce professional results efficiently. This mirrors the balance of human insight and technology seen in AI-assisted work, where innovation enhances output without replacing expertise.</p>
+.navbar-brand img {
+  width: 30px;
+  height: 24px;
+}
 
-    <h2>Skill Level</h2>
-    <p>Two years of experience with an above-average portfolio indicate competent skill. Like “vibe” coders using AI responsibly, the team can make thoughtful decisions, customize the final product, and ensure high-quality results that justify their fee.</p>
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 28px;
+}
 
-    <h2>Conclusion</h2>
-    <p>Agreeing to the 40k package is reasonable. The cost reflects not just the tools but the combination of integrity, creativity, and skill. The team’s expertise ensures reliable, ethical, and polished documentation, similar to how human oversight ensures quality in AI-assisted projects.</p>
-  </div>
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
 
-  <!-- Pagination -->
-  <nav aria-label="Page navigation">
-    <ul class="pagination justify-content-center">
-      <li class="page-item"><a class="page-link" href="Ethics.html" aria-label="Previous">&laquo;</a></li>
-      <li class="page-item"><a class="page-link" href="Faq.html">FAQ</a></li>
-      <li class="page-item"><a class="page-link" href="Ethics.html">Ethics</a></li>
-      <li class="page-item active"><a class="page-link" href="article.html">Article</a></li>
-      <li class="page-item disabled"><span class="page-link" aria-hidden="true">&raquo;</span></li>
-    </ul>
-  </nav>
-</div>
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 28px;
+}
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  left: 2px;
+  top: 2px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #00f0ff;
+}
+
+input:checked + .slider::before {
+  transform: translateX(22px);
+}
+
+.profile-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 2rem 1rem;
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+
+.profile-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 400px;
+  width: 100%;
+  padding: 2rem;
+  background-color: #ffffff;
+  border: 2px solid #00f0ff;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 240, 255, 0.3);
+  font-family: 'Orbitron', monospace;
+  text-align: center;
+}
+
+.profile-box img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #00f0ff;
+  box-shadow: 0 4px 15px rgba(0, 240, 255, 0.2);
+}
+
+.pinfo {
+  background-color: #ffffff;
+  border: 2px solid #00f0ff;
+  border-radius: 15px;
+  padding: 1.5rem 2rem;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.25);
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-top: 1.5rem;
+}
+
+.pinfo h3 {
+  margin: 0.5rem 0;
+  color: #00f0ff;
+  text-shadow: 0 0 5px #6ef5ff, 0 0 10px #00f0ff, 0 0 20px #00f0ff70;
+}
+
+.pinfo:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px #00f0ff80, 0 0 40px #00f0ff50 inset;
+}
+
+.activity {
+  display: inline-block;
+  border: 2px solid #00f0ff;
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #00f0ff;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-top: 1.5rem;
+}
+
+.activity a {
+  color: #00f0ff;
+  text-decoration: none;
+  font-family: 'Orbitron', monospace;
+  font-weight: 500;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.activity a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 8px #00f0ff;
+}
+
+.faq-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.faq-container {
+  max-width: 350px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30px;
+  border-radius: 25px;
+  background: rgba(0, 240, 255, 0.05);
+  border: 2px solid #00f0ff;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.2);
+  text-align: left;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  transition: all 0.3s ease-in-out;
+}
+
+.faq-container h1,
+.faq-container h2,
+.faq-container p,
+.faq-container ul,
+.faq-container li {
+  color: #000;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  margin: 0 0 1rem 0;
+  padding: 0;
+}
+
+.card {
+  transition: all 0.3s ease-in-out;
+}
+
+.card .card-body {
+  text-align: center;
+}
+
+.card .btn-primary {
+  background-color: #00f0ff;
+  border-color: #00f0ff;
+  color: #000;
+}
+
+.card .btn-primary:hover {
+  background-color: #00d0ff;
+  border-color: #00d0ff;
+  color: #000;
+}
+
+.pagination .page-item .page-link {
+  background-color: #ffffff;
+  color: #00f0ff;
+  border-color: #00f0ff;
+  transition: all 0.3s ease-in-out;
+}
+
+.pagination .page-item .page-link:hover,
+.pagination .page-item.active .page-link {
+  background-color: #00f0ff;
+  color: #000;
+  border-color: #00f0ff;
+}
+
+body.dark-mode {
+  background-color: #1c1c1c;
+  color: #00f0ff;
+}
+
+body.dark-mode .faq-container {
+  background-color: #222;
+  border-color: #00f0ff;
+  color: #ffffff;
+}
+
+body.dark-mode .faq-container h1,
+body.dark-mode .faq-container h2,
+body.dark-mode .faq-container p,
+body.dark-mode .faq-container ul,
+body.dark-mode .faq-container li {
+  color: #ffffff;
+}
+
+body.dark-mode .card {
+  background-color: #222;
+  color: #00f0ff;
+  border-color: #00f0ff;
+}
+
+body.dark-mode .card .btn-primary {
+  background-color: #00f0ff;
+  border-color: #00f0ff;
+  color: #000;
+}
+
+body.dark-mode .card .btn-primary:hover {
+  background-color: #00d0ff;
+  border-color: #00d0ff;
+  color: #000;
+}
+
+body.dark-mode .pagination .page-item .page-link {
+  background-color: #222;
+  color: #00f0ff;
+  border-color: #00f0ff;
+}
+
+body.dark-mode .pagination .page-item .page-link:hover,
+body.dark-mode .pagination .page-item.active .page-link {
+  background-color: #00f0ff;
+  color: #000;
+  border-color: #00f0ff;
+}
+
+@media (max-width: 768px) {
+  .profile-page {
+    padding: 1rem;
+  }
+  .profile-box {
+    max-width: 100%;
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+  .profile-box img {
+    width: 120px;
+    height: 120px;
+  }
+  .pinfo {
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+  }
+  .activity {
+    padding: 8px 16px;
+    font-size: 14px;
+    margin-top: 1rem;
+  }
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar .container-fluid {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .faq-wrapper {
+    padding: 0 5px;
+    gap: 15px;
+  }
+  .faq-container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 15px;
+  }
+  .pagination .page-item .page-link {
+    margin-top: 10px;
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+}
