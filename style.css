@@ -21,16 +21,6 @@
   box-shadow: 0 0 25px rgba(0, 240, 255, 0.3);
   font-family: 'Orbitron', monospace;
   text-align: center;
-  height: auto;
-}
-
-.profile-box img {
-  width: 40%;
-  max-width: 200px;
-  height: auto;
-  border-radius: 15px;
-  border: 2px solid #00f0ff;
-  box-shadow: 0 4px 15px rgba(0, 240, 255, 0.2);
 }
 
 .pinfo {
@@ -41,10 +31,22 @@
   border: 2px solid #00f0ff;
   border-radius: 15px;
   box-shadow: 0 0 20px rgba(0, 240, 255, 0.25);
+  /* Remove scroll unless content is huge */
   height: auto;
-  max-height: 200px;
-  overflow-y: auto;
+  max-height: none;
+  overflow-y: visible;
 }
+
+
+.profile-box img {
+  width: 40%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 15px;
+  border: 2px solid #00f0ff;
+  box-shadow: 0 4px 15px rgba(0, 240, 255, 0.2);
+}
+
 
 
 .pinfo h3 {
