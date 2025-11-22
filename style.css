@@ -112,30 +112,33 @@ input:checked + .slider::before {
 }
 
 .profile-box {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
   width: 90%;
   max-width: 400px;
-  padding: 2rem 2rem 1.5rem 2rem;
+  padding: 4rem 2rem 2rem 2rem;
   border: 2px solid #00f0ff;
   border-radius: 20px;
   box-shadow: 0 0 25px rgba(0, 240, 255, 0.3);
   font-family: 'Orbitron', monospace;
   text-align: center;
-  position: relative;
+  transition: all 0.3s ease-in-out;
   overflow: visible;
 }
 
 .profile-box img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 120px;
   height: 120px;
+  object-fit: cover;
   border-radius: 50%;
   border: 2px solid #00f0ff;
-  object-fit: cover;
-  margin-top: -60px;
-  z-index: 1;
   box-shadow: 0 4px 15px rgba(0, 240, 255, 0.2);
 }
 
@@ -280,13 +283,12 @@ body.dark-mode .pagination .page-item .page-link {
   }
 
   .profile-box {
-    padding-top: 3.5rem;
+    padding-top: 4rem;
   }
 
   .profile-box img {
     width: 80px;
     height: 80px;
-    margin-top: -40px;
   }
 
   .activity {
