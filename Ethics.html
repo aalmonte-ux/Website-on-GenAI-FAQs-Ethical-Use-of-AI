@@ -5,17 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FAQ Page</title>
   <link href="style.css" rel="stylesheet">
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body.light-mode {
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    .faq-container {
+      padding-top: 120px; /* pushes content below navbar */
+      padding-left: 20px;
+      padding-right: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .mode-label {
+      font-weight: bold;
+    }
+
+    
+    .faq-container h2 {
+      margin-top: 30px;
+    }
+  </style>
 </head>
 <body class="light-mode">
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg light-mode fixed-top">
+<nav class="navbar navbar-expand-lg light-mode fixed-top bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand light-mode" href="home.html">
+    <a class="navbar-brand" href="home.html">
       <img src="https://cdn2.iconfinder.com/data/icons/artifiial-intelligence/70/47_Transparent_Ai-1024.png" 
-           alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+           alt="AI Logo" width="30" height="24" class="d-inline-block align-text-top">
       GenAI FAQs & Ethical Use of AI
     </a>
     <div class="d-flex align-items-center ms-auto">
@@ -27,82 +50,82 @@
     </div>
   </div>
 </nav>
-<br>
-  <br>
-<br>
-  <br>
-  
-  <div class="faq-container" 
-    <h1>Ethical Use of AI</h1>
-    <h2>Responsible Use of AI in the Academe</h2>
-    <ul>
-      <li>Use AI to assist with brainstorming, outlining, and idea generation, but always develop ideas in your own words.</li>
-      <li>Summarize articles or clarify complex topics with AI, ensuring all information is verified from credible sources.</li>
-      <li>Improve writing quality using tools like Grammarly, without letting AI significantly change the content.</li>
-      <li>Learn from AI by exploring examples, explanations, and real-world use cases, treating it as an assistant rather than a substitute for learning.</li>
-      <li>Do not submit AI-completed assignments as your own; always maintain academic integrity.</li>
-      <li>Do not accept AI-generated responses as absolute fact; verify information before using it.</li>
-      <li>Engage critically with AI outputs; do not let AI replace your own reasoning and problem-solving skills.</li>
-    </ul>
-    <h2>Avoiding plagiarism and misuse</h2>
-    <p>Plagiarism is a serious concern when using generative AI tools in academic writing. While AI can support research and writing tasks, it also creates risks related to originality, accuracy, and proper attribution. To protect academic integrity, it is important to use these tools responsibly and ethically.</p>
-    <ul>
-      <li>Verify AI-generated content by checking the accuracy and originality of its sources</li>
-      <li>Read and understand original documents before using AI-assisted information</li>
-      <li>Use generative AI only with consistent human supervision</li>
-      <li>Review and revise AI-generated content to ensure it meets academic standards</li>
-      <li>Cite all ideas, data, and information taken from other sources</li>
-      <li>Use quotation marks when copying words exactly from a source</li>
-    </ul>
-    <h2>Accuracy and verification of AI outputs</h2>
-    <p>According to the authors, the accuracy of AI-generated content cannot be assumed and must be carefully evaluated. While AI tools can provide logical and relevant responses, they may also produce biased, outdated, incomplete, or misleading information. For this reason, verifying AI outputs is essential.</p>
-    <ul>
-      <li>AI answers should be cross-referenced with multiple reliable sources</li>
-      <li>Facts, statistics, and claims must be verified before being used</li>
-      <li>The date and timeliness of AI-provided information should always be checked</li>
-      <li>The authority and credibility of the original sources must be evaluated</li>
-      <li>Possible bias or misleading content should be identified</li>
-      <li>Fact-checking tools and trusted references should be used</li>
-      <li>Critical thinking is essential when interpreting AI-generated information</li>
-      <li>Human review and expert consultation are necessary when accuracy is critical</li>
-    </ul>
-    <h2>Bias and fairness</h2>
-    <p>Bias and fairness in AI algorithms are critical issues because biased AI can produce unfair or discriminatory outcomes, perpetuate societal inequalities, and erode trust. Ensuring fairness requires attention to how AI models are trained, how data is used, and how decisions are made.</p>
-    <ul>
-      <li>Bias can arise from biased data, models, and human decision-making</li>
-      <li>Discrimination occurs when AI produces negative outcomes for certain groups</li>
-      <li>Biased AI can exacerbate societal inequalities</li>
-      <li>Fairness approaches include individual fairness, group fairness, equal opportunity, and counterfactual fairness</li>
-      <li>Bias audits are necessary to identify and address unfairness</li>
-      <li>Preprocessing data ensures representative datasets</li>
-      <li>Incorporating fairness constraints during training can enforce equitable predictions</li>
-      <li>Post-processing techniques can adjust AI outputs</li>
-      <li>Explainability and transparency help detect bias and build trust</li>
-    </ul>
-  </div>
 
-  <div class="faq-container" 
-    <h1>References:</h1>
-    <ul>
-      <li><a href="https://gleaner.rutgers.edu/2024/11/27/ethical-and-responsible-use-of-ai-in-academic-study/">https://gleaner.rutgers.edu/2024/11/27/ethical-and-responsible-use-of-ai-in-academic-study/</a></li>
-      <li><a href="https://paperpal.com/blog/academic-writing-guides/how-to-avoid-plagiarism-when-using-generative-ai-tools">https://paperpal.com/blog/academic-writing-guides/how-to-avoid-plagiarism-when-using-generative-ai-tools</a></li>
-      <li><a href="https://uen.pressbooks.pub/voicesofusuvol17/chapter/assessing-the-accuracy-of-ai-outputs-a-comparative-study/">https://uen.pressbooks.pub/voicesofusuvol17/chapter/assessing-the-accuracy-of-ai-outputs-a-comparative-study</a></li>
-      <li><a href="https://www.researchgate.net/publication/390073540_Bias_and_Fairness_in_AI_Algorithms">https://www.researchgate.net/publication/390073540_Bias_and_Fairness_in_AI_Algorithms</a></li>
-    </ul>
-  </div>
+<!-- FAQ Content -->
+<div class="faq-container">
+  <h1>Ethical Use of AI</h1>
 
-  <!-- Pagination -->
-  <nav aria-label="Page navigation" class="my-4">
-    <ul class="pagination justify-content-center">
-      <li class="page-item"><a class="page-link" href="Faq.html">&laquo;</a></li>
-      <li class="page-item"><a class="page-link" href="Faq.html">FAQs</a></li>
-      <li class="page-item"><a class="page-link" href="Ethics.html">Ethics</a></li>
-      <li class="page-item"><a class="page-link" href="article.html">Article</a></li>
-      <li class="page-item"><a class="page-link" href="Ethics.html"> &raquo;</a></li>
-    </ul>
-  </nav>
+  <h2>Responsible Use of AI in the Academe</h2>
+  <ul>
+    <li>Use AI to assist with brainstorming, outlining, and idea generation, but always develop ideas in your own words.</li>
+    <li>Summarize articles or clarify complex topics with AI, ensuring all information is verified from credible sources.</li>
+    <li>Improve writing quality using tools like Grammarly, without letting AI significantly change the content.</li>
+    <li>Learn from AI by exploring examples, explanations, and real-world use cases, treating it as an assistant rather than a substitute for learning.</li>
+    <li>Do not submit AI-completed assignments as your own; always maintain academic integrity.</li>
+    <li>Do not accept AI-generated responses as absolute fact; verify information before using it.</li>
+    <li>Engage critically with AI outputs; do not let AI replace your own reasoning and problem-solving skills.</li>
+  </ul>
 
+  <h2>Avoiding Plagiarism and Misuse</h2>
+  <p>Plagiarism is a serious concern when using generative AI tools in academic writing. While AI can support research and writing tasks, it also creates risks related to originality, accuracy, and proper attribution. To protect academic integrity, it is important to use these tools responsibly and ethically.</p>
+  <ul>
+    <li>Verify AI-generated content by checking the accuracy and originality of its sources</li>
+    <li>Read and understand original documents before using AI-assisted information</li>
+    <li>Use generative AI only with consistent human supervision</li>
+    <li>Review and revise AI-generated content to ensure it meets academic standards</li>
+    <li>Cite all ideas, data, and information taken from other sources</li>
+    <li>Use quotation marks when copying words exactly from a source</li>
+  </ul>
 
+  <h2>Accuracy and Verification of AI Outputs</h2>
+  <p>According to the authors, the accuracy of AI-generated content cannot be assumed and must be carefully evaluated. While AI tools can provide logical and relevant responses, they may also produce biased, outdated, incomplete, or misleading information. For this reason, verifying AI outputs is essential.</p>
+  <ul>
+    <li>AI answers should be cross-referenced with multiple reliable sources</li>
+    <li>Facts, statistics, and claims must be verified before being used</li>
+    <li>The date and timeliness of AI-provided information should always be checked</li>
+    <li>The authority and credibility of the original sources must be evaluated</li>
+    <li>Possible bias or misleading content should be identified</li>
+    <li>Fact-checking tools and trusted references should be used</li>
+    <li>Critical thinking is essential when interpreting AI-generated information</li>
+    <li>Human review and expert consultation are necessary when accuracy is critical</li>
+  </ul>
+
+  <h2>Bias and Fairness</h2>
+  <p>Bias and fairness in AI algorithms are critical issues because biased AI can produce unfair or discriminatory outcomes, perpetuate societal inequalities, and erode trust. Ensuring fairness requires attention to how AI models are trained, how data is used, and how decisions are made.</p>
+  <ul>
+    <li>Bias can arise from biased data, models, and human decision-making</li>
+    <li>Discrimination occurs when AI produces negative outcomes for certain groups</li>
+    <li>Biased AI can exacerbate societal inequalities</li>
+    <li>Fairness approaches include individual fairness, group fairness, equal opportunity, and counterfactual fairness</li>
+    <li>Bias audits are necessary to identify and address unfairness</li>
+    <li>Preprocessing data ensures representative datasets</li>
+    <li>Incorporating fairness constraints during training can enforce equitable predictions</li>
+    <li>Post-processing techniques can adjust AI outputs</li>
+    <li>Explainability and transparency help detect bias and build trust</li>
+  </ul>
+</div>
+
+<!-- References -->
+<div class="faq-container">
+  <h1>References:</h1>
+  <ul>
+    <li><a href="https://gleaner.rutgers.edu/2024/11/27/ethical-and-responsible-use-of-ai-in-academic-study/">Rutgers: Ethical and Responsible Use of AI</a></li>
+    <li><a href="https://paperpal.com/blog/academic-writing-guides/how-to-avoid-plagiarism-when-using-generative-ai-tools">Paperpal: Avoiding Plagiarism with AI</a></li>
+    <li><a href="https://uen.pressbooks.pub/voicesofusuvol17/chapter/assessing-the-accuracy-of-ai-outputs-a-comparative-study/">Accuracy of AI Outputs</a></li>
+    <li><a href="https://www.researchgate.net/publication/390073540_Bias_and_Fairness_in_AI_Algorithms">Bias and Fairness in AI</a></li>
+  </ul>
+</div>
+
+<!-- Pagination -->
+<nav aria-label="Page navigation" class="my-4">
+  <ul class="pagination justify-content-center">
+    <li class="page-item"><a class="page-link" href="Faq.html">&laquo;</a></li>
+    <li class="page-item"><a class="page-link" href="Faq.html">FAQs</a></li>
+    <li class="page-item"><a class="page-link" href="Ethics.html">Ethics</a></li>
+    <li class="page-item"><a class="page-link" href="article.html">Article</a></li>
+    <li class="page-item"><a class="page-link" href="Ethics.html">&raquo;</a></li>
+  </ul>
+</nav>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
