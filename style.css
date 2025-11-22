@@ -148,7 +148,7 @@ input:checked + .slider::before {
   box-shadow: 0 0 20px rgba(0, 240, 255, 0.25);
   overflow-wrap: break-word;
   word-break: break-word;
-  font-size: 12px;
+  font-size: 8px;
   transition: all 0.3s ease-in-out;
 }
 
