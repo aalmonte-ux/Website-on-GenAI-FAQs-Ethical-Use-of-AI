@@ -119,24 +119,28 @@ input:checked + .slider::before {
   width: 90%;
   max-width: 400px;
   padding: 1.5rem 2rem;
+  padding-top: 80px; 
   border: 2px solid #00f0ff;
   border-radius: 20px;
   box-shadow: 0 0 25px rgba(0, 240, 255, 0.3);
   font-family: 'Orbitron', monospace;
   text-align: center;
   transition: all 0.3s ease-in-out;
+  position: relative; 
 }
 
 .profile-box img {
+  position: absolute;
+  top: -60px; 
+  left: 50%;
+  transform: translateX(-50%);
   width: 120px;
   height: 120px;
-  object-fit: cover;
   border-radius: 50%;
   border: 2px solid #00f0ff;
-  box-shadow: 0 4px 15px rgba(0, 240, 255, 0.2);
-  display: block;
-  margin: -60px auto 1rem;
-  margin-top: 50px;
+  object-fit: cover;
+}
+
 }
 
 .pinfo {
