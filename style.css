@@ -33,6 +33,7 @@ body {
   align-items: center;
   gap: 0.5rem;
   flex-shrink: 0;
+  color: #00f0ff;
 }
 
 .navbar-brand img {
@@ -175,7 +176,7 @@ input:checked + .slider::before {
   text-shadow: 0 0 8px #00f0ff;
 }
 
-/* FAQ Container */
+/* FAQ container */
 .faq-container {
   max-width: 800px;
   width: 100%;
@@ -192,7 +193,7 @@ input:checked + .slider::before {
   overflow-wrap: break-word;
 }
 
-/* Centering with equal margin for all desktop screens */
+/* Center FAQ and fix margins */
 @media (min-width: 1024px) {
   .faq-container {
     margin-left: auto;
@@ -220,7 +221,6 @@ input:checked + .slider::before {
   margin-left: 20px;
 }
 
-/* Cards */
 .card {
   transition: all 0.3s ease-in-out;
 }
@@ -261,8 +261,9 @@ body.dark-mode {
   color: #ffffff;
 }
 
-body.dark-mode .navbar a {
-  color: #ffffff;
+body.dark-mode .navbar,
+body.dark-mode .navbar * {
+  color: #ffffff !important;
 }
 
 body.dark-mode .faq-container {
@@ -310,7 +311,6 @@ body.dark-mode .pagination .page-item.active .page-link {
   border-color: #00f0ff;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
   .profile-page {
     padding: 1rem;
@@ -360,4 +360,3 @@ body.dark-mode .pagination .page-item.active .page-link {
     font-size: 14px;
   }
 }
-
