@@ -112,6 +112,7 @@ input:checked + .slider::before {
   text-align: center;
 }
 
+
 .profile-box img {
   width: 150px;
   height: 150px;
@@ -120,6 +121,7 @@ input:checked + .slider::before {
   border: 2px solid #00f0ff;
   box-shadow: 0 4px 15px rgba(0, 240, 255, 0.2);
 }
+
 
 .pinfo {
   background-color: #ffffff;
