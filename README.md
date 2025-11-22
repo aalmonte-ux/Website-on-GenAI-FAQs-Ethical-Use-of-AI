@@ -10,6 +10,8 @@ click the link: https://aalmonte-ux.github.io/Website-on-GenAI-FAQs-Ethical-Use-
 
 Frameworks/libraries used: Bootstrap
 
+Screebshots:
+
 <img width="1676" height="951" alt="image" src="https://github.com/user-attachments/assets/ba4ed634-961d-4d41-bf43-f7d92fa8a61a" />
 <img width="1919" height="750" alt="image" src="https://github.com/user-attachments/assets/f612c9cf-9202-4d69-b499-3426f8c63942" />
 <img width="1919" height="1064" alt="image" src="https://github.com/user-attachments/assets/7aa3a337-ad6f-4499-9b49-ea4e7e33d787" />
