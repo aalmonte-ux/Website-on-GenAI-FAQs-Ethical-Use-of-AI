@@ -35,7 +35,7 @@
     }
 
     .container-1 {
-      margin-top: 100px;
+      margin-top: 100px; 
     }
 
     .container-2 {
@@ -49,11 +49,26 @@
     .faq-container h2 {
       margin-top: 30px;
     }
+
+ 
+    @media (max-width: 768px) {
+      .container-1 {
+        margin-top: 120px; 
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      .container-2 {
+        margin-top: 40px;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
   </style>
 </head>
 <body class="light-mode">
 
-
+<!-- Navbar -->
 <nav class="navbar navbar-expand-lg light-mode fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="home.html">
@@ -136,21 +151,19 @@
       <li><a href="https://www.researchgate.net/publication/390073540_Bias_and_Fairness_in_AI_Algorithms">Bias and Fairness in AI</a></li>
     </ul>
 
+    <!-- Pagination -->
     <nav aria-label="Page navigation" class="my-4">
       <ul class="pagination justify-content-center">
-        <!-- Previous Arrow -->
         <li class="page-item">
           <a class="page-link" href="Faq.html" aria-label="Previous">
             <span aria-hidden="true">&laquo;</span>
           </a>
         </li>
 
-    
         <li class="page-item"><a class="page-link" href="Faq.html">FAQs</a></li>
         <li class="page-item"><a class="page-link" href="Ethics.html">Ethics</a></li>
         <li class="page-item"><a class="page-link" href="article.html">Article</a></li>
 
-   
         <li class="page-item">
           <a class="page-link" href="Ethics.html" aria-label="Next">
             <span aria-hidden="true">&raquo;</span>
