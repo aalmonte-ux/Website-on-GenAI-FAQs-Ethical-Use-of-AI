@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ethics Page</title>
+  <title>FAQ Page</title>
   <link href="style.css" rel="stylesheet">
   <script src="script.js" defer></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -35,11 +35,11 @@
     }
 
     .container-1 {
-      margin-top: 100px; 
+      margin-top: 60px;
     }
 
     .container-2 {
-      margin-top: 60px; 
+      margin-top: 40px;
     }
 
     .mode-label {
@@ -50,10 +50,9 @@
       margin-top: 30px;
     }
 
- 
     @media (max-width: 768px) {
       .container-1 {
-        margin-top: 120px; 
+        margin-top: 120px;
         padding-left: 15px;
         padding-right: 15px;
       }
@@ -67,7 +66,6 @@
   </style>
 </head>
 <body class="light-mode">
-
 
 <nav class="navbar navbar-expand-lg light-mode fixed-top">
   <div class="container-fluid">
@@ -85,7 +83,6 @@
     </div>
   </div>
 </nav>
-
 
 <div class="container-1">
   <div class="faq-container">
@@ -140,18 +137,16 @@
   </div>
 </div>
 
-
 <div class="container-2">
   <div class="faq-container">
     <h1>References:</h1>
     <ul>
-      <li><a href="https://gleaner.rutgers.edu/2024/11/27/ethical-and-responsible-use-of-ai-in-academic-study/">Rhttps://gleaner.rutgers.edu/2024/11/27/ethical-and-responsible-use-of-ai-in-academic-study/</a></li>
+      <li><a href="https://gleaner.rutgers.edu/2024/11/27/ethical-and-responsible-use-of-ai-in-academic-study/">https://gleaner.rutgers.edu/2024/11/27/ethical-and-responsible-use-of-ai-in-academic-study/</a></li>
       <li><a href="https://paperpal.com/blog/academic-writing-guides/how-to-avoid-plagiarism-when-using-generative-ai-tools">https://paperpal.com/blog/academic-writing-guides/how-to-avoid-plagiarism-when-using-generative-ai-tools</a></li>
       <li><a href="https://uen.pressbooks.pub/voicesofusuvol17/chapter/assessing-the-accuracy-of-ai-outputs-a-comparative-study/">https://uen.pressbooks.pub/voicesofusuvol17/chapter/assessing-the-accuracy-of-ai-outputs-a-comparative-study/</a></li>
-      <li><a href="https://www.researchgate.net/publication/390073540_Bias_and_Fairness_in_AI_Algorithms">https://www.researchgate.net/publication/390073540_Bias_and_Fairness_in_AI_Algorithms">Bias and Fairness in AI</a></li>
+      <li><a href="https://www.researchgate.net/publication/390073540_Bias_and_Fairness_in_AI_Algorithms">https://www.researchgate.net/publication/390073540_Bias_and_Fairness_in_AI_Algorithms</a></li>
     </ul>
 
-  
     <nav aria-label="Page navigation" class="my-4">
       <ul class="pagination justify-content-center">
         <li class="page-item">
@@ -159,11 +154,9 @@
             <span aria-hidden="true">&laquo;</span>
           </a>
         </li>
-
         <li class="page-item"><a class="page-link" href="Faq.html">FAQs</a></li>
         <li class="page-item"><a class="page-link" href="Ethics.html">Ethics</a></li>
         <li class="page-item"><a class="page-link" href="article.html">Article</a></li>
-
         <li class="page-item">
           <a class="page-link" href="Ethics.html" aria-label="Next">
             <span aria-hidden="true">&raquo;</span>
@@ -176,7 +169,6 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 <script>
- 
   const toggle = document.getElementById('toggleMode');
   toggle.addEventListener('change', () => {
     document.body.classList.toggle('dark-mode');
@@ -184,8 +176,7 @@
     const navbar = document.querySelector('.navbar');
     navbar.classList.toggle('dark-mode');
     navbar.classList.toggle('light-mode');
-    document.querySelector('.mode-label').textContent = 
-      toggle.checked ? 'Dark Mode' : 'Light Mode';
+    document.querySelector('.mode-label').textContent = toggle.checked ? 'Dark Mode' : 'Light Mode';
   });
 </script>
 
