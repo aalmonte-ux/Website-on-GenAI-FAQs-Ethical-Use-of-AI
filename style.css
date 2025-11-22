@@ -332,6 +332,7 @@ body.dark-mode .pagination .page-item.active .page-link {
   .pinfo {
     padding: 1rem 1.5rem;
     margin-top: 1rem;
+    word-wrap: break-word;
   }
 
   .activity {
@@ -340,21 +341,56 @@ body.dark-mode .pagination .page-item.active .page-link {
     margin-top: 1rem;
   }
 
+  .activity a {
+    word-wrap: break-word;
+  }
+
   .faq-container {
-    max-width: 100%;
-    margin: 10px; 
+    width: 95%;
+    max-width: 800px;
+    margin: 10px auto 20px auto; /* small space from navbar */
     padding: 20px;
+    border-radius: 25px;
+    background: rgba(0, 240, 255, 0.05);
+    border: 2px solid #00f0ff;
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.2);
+    word-wrap: break-word;
+  }
+
+  .faq-container h1,
+  .faq-container h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .faq-container p,
+  .faq-container ul,
+  .faq-container li {
+    font-size: 1rem;
+    line-height: 1.5;
+    word-wrap: break-word;
   }
 
   .navbar {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 15px;
   }
 
   .navbar .container-fluid {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
+  }
+
+  .switch {
+    margin-top: 0;
+  }
+
+  .pagination .page-item .page-link {
+    margin-top: 10px;
+    padding: 6px 12px;
+    font-size: 14px;
   }
 }
